@@ -93,7 +93,7 @@
   (let [{:keys [options summary arguments]} (parse-opts args cli-options)]
     (cond
       (:help options) (println (usage summary))
-      (and (:set options) (not (empty? arguments))) (set-token (first arguments))
       (and (:token options) (:message options)) (notify args)
+      (and (:set options) (not (empty? arguments))) (set-token (first arguments))
       (and (:message options) (not (empty? arguments))) (read-token-and-send (first arguments))
       :else (println (usage summary)))))
