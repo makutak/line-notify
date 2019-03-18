@@ -1,6 +1,6 @@
 # LINE-Notify
 
-Send message to Line from CLI.
+Send message to LINE from CLI.
 
 ## Requirements
 * [node](https://nodejs.org/en/) (v8.10.0++)
@@ -14,28 +14,31 @@ $ git clone https://github.com/makutak/line-notify.git
 ```
 
 ## QuickStart
-* Please build.
+### Generate LINE Notify API token
+
+https://notify-bot.line.me/en/
+
+### First of all, Please build this app.
 
 ``` bash
 $ npm run build
 ```
 
-* send message with your LINE API token.
+### send message with your LINE API token.
 
 ```bash
-$ node ./target/main.js -t <YOUR LINE API TOKEN> -m <Message>
+$ node target/main.js -t <YOUR LINE API TOKEN> -m <Message>
 ```
-* set your LINE API token to config.
+### set your LINE API token to config file.
+``` bash
+$ node target/main.js -s <YOUR LINE API TOKEN>
+```
+#### generated ```config/token.json``` which is your LINE API token's file.
+
+###  if set token, can send message widthout ```-s``` option.
 
 ``` bash
-$ node ./target/main.js -s <YOUR LINE API TOKEN>
-```
-* generated ```config/token.json``` which your LINE API token's file.
-
-*  if set token, can send message widthout ```-s``` option.
-
-``` bash
-$ $ node ./target/main.js -m <Message>
+$ node target/main.js -m <Message>
 ```
 
 ## Options
