@@ -1,6 +1,6 @@
 # LINE-Notify
 
-Send message to LINE from CLI.
+Send message to LINE Notify from CLI.
 
 ## Requirements
 * [node](https://nodejs.org/en/) (v8.10.0++)
