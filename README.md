@@ -17,6 +17,11 @@ $ git clone https://github.com/makutak/line-notify.git
 #### First of all, generate LINE Notify API token
 * See this page https://notify-bot.line.me/en/
 
+#### install dependencies.
+``` bash
+$ npm install
+```
+
 #### build this app.
 ``` bash
 $ npm run build
