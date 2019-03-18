@@ -14,12 +14,10 @@ $ git clone https://github.com/makutak/line-notify.git
 ```
 
 ## QuickStart
-#### Generate LINE Notify API token
+#### First of all, generate LINE Notify API token
+* See this page https://notify-bot.line.me/en/
 
-https://notify-bot.line.me/en/
-
-#### First of all, Please build this app.
-
+#### build this app.
 ``` bash
 $ npm run build
 ```
